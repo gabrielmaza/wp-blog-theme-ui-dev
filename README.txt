@@ -8,4 +8,5 @@ package.json edited:
 "start": "sass ./sass/index.scss ./css/style.css --watch"
 
 To run: 
-npm start
+$ npm install
+$ npm start
