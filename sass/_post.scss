@@ -1,0 +1,268 @@
+$white: #fff;
+$dark: #000063;
+$semidark: #311b92;
+$light: #6746c3;
+$gray: #aaa;
+$dark-gray: #666;
+$light-gray: #e0e0e0;
+$primary: #c6ff00;
+$primary-hov: #d1c4e9;
+$facebook: #3b5999;
+$twitter: #00acee;
+$pinterest: #ca2127;
+$linkedin: #0077b5;
+$whatsapp: #3fbb50;
+$email: #888;
+
+$semibold: 600;
+$bold: 700;
+
+$px-10: 0.625rem;
+$px-12: 0.75rem;
+$px-14: 0.875rem;
+$px-16: 1rem;
+$px-24: 1.5rem;
+$px-26: 1.625rem;
+$px-34: 2.125rem;
+$px-40: 2.5rem;
+
+$sm-view: 576px;
+$md-view: 768px;
+$lg-view: 992px;
+$xl-view: 1200px;
+$xxl-view: 1400px;
+$xxxl-view: 1920px;
+
+/* POST PAGE */
+
+.post_title {
+  font-size: $px-26;
+  font-weight: $bold;
+  line-height: $px-40;
+  @media (min-width: $md-view) {
+    font-size: $px-34;
+  }
+}
+.post_meta {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  border-bottom: solid 1px $light-gray;
+  color: $gray;
+  font-size: $px-12;
+  .post_meta-author {
+    padding: 0 4px;
+    margin: 0 10px 0 0;
+    &::before {
+      content: "\f2c0";
+      font-family: FontAwesome;
+      margin: 0 3px 0 0;
+      font-size: $px-12;
+    }
+    a {
+      font-size: $px-14;
+      transition: color 0.17s;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $light;
+      }
+    }
+  }
+}
+.post_body {
+  width: 100%;
+  overflow: hidden;
+  padding: 24px 0;
+  border-bottom: solid 1px $light-gray;
+  @media (min-width: $md-view) {
+    padding: 24px;
+  }
+  .wp-block-image {
+    background-color: white;
+    figcaption {
+      font-size: $px-12;
+      color: $gray;
+      background-color: white;
+    }
+  }
+  .post_blockquote,
+  blockquote {
+    border-left: 5px solid $semidark;
+    margin-left: 0;
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    span,
+    p {
+      font-size: $px-24;
+      font-style: italic;
+    }
+  }
+  .post_ul,
+  ul {
+    margin: 0 0 20px;
+    .post_li,
+    li {
+      font-size: $px-14;
+      list-style: square inside;
+      margin: 5px 0;
+      padding: 0;
+      &::marker {
+        font-size: $px-14;
+        line-height: 1.5;
+      }
+    }
+  }
+  .post_ol,
+  ol {
+    margin: 0 0 20px;
+    background: transparent;
+    .post_li,
+    li {
+      font-size: $px-14;
+      list-style: decimal inside;
+      margin: 5px 0;
+    }
+  }
+  .post_video,
+  video {
+    margin: 0 0 20px;
+    text-align: left;
+  }
+  a {
+    color: $semidark;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $light;
+    }
+  }
+}
+.post-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 0;
+  .post-footer_labels {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: $px-18;
+    font-weight: $bold;
+    a {
+      font-size: $px-14;
+      font-weight: $semibold;
+      color: $dark;
+      padding: 8px 16px;
+      background: $light-gray;
+      border-radius: 10px;
+      text-transform: uppercase;
+    }
+  }
+  .post-footer_share {
+    width: 100%;
+    .post-footer_share-links {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      width: 100%;
+      .link {
+        display: block;
+        width: fit-content;
+        min-width: 30px;
+        height: 35px;
+        border-radius: 17px;
+        font-size: $px-14;
+        font-weight: $bold;
+        color: $white;
+        line-height: 35px;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0 5px 0 0;
+        padding: 0 16px;
+        transition: all 0.2s ease;
+        border: none;
+        opacity: 1;
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+        &.facebook {
+          background-color: $facebook;
+          span {
+            font-size: $px-14;
+            font-weight: $bold;
+            color: $white;
+          }
+        }
+        &.twitter {
+          background-color: $twitter;
+          span {
+            font-size: $px-14;
+            font-weight: $bold;
+            color: $white;
+          }
+        }
+        &.pinterest {
+          background-color: $pinterest;
+        }
+        &.linkedin {
+          background-color: $linkedin;
+        }
+        &.whatsapp {
+          background-color: $whatsapp;
+        }
+        &.email {
+          background-color: $email;
+        }
+      }
+    }
+  }
+  .post-footer_about {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    .post-footer_about-title {
+      font-size: $px-18;
+      font-weight: $bold;
+    }
+    .post-footer_about-body {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      @media (min-width: $lg-view) {
+        flex-direction: row;
+        gap: 24px;
+      }
+      img {
+        width: 90px;
+        height: auto;
+        object-fit: contain;
+      }
+      .post-footer_about-description {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        span {
+          font-size: $px-18;
+          font-weight: $semibold;
+          color: $dark-gray;
+        }
+        a {
+          font-size: $px-18;
+          font-weight: $semibold;
+          color: $gray;
+          &:hover {
+            color: $dark-gray;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+$white: #fff;
+$dark: #000063;
+$semidark: #311b92;
+$light: #6746c3;
+$primary: #c6ff00;
+
+$bold: 700;
+
+$px-14: 0.875rem;
+
+/* PAGER */
+
+.blog-pager {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin: 0 0 32px;
+  .page-numbers {
+    display: block;
+    width: fit-content;
+    min-width: 24px;
+    height: 30px;
+    background-color: $dark;
+    color: $white;
+    font-size: $px-14;
+    font-weight: $bold;
+    line-height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 5px 0 0;
+    padding: 0 12px;
+    transition: all 0.2s ease;
+    border: none;
+    border-radius: 4px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $light;
+      cursor: pointer;
+    }
+    &.prev {
+      &::before {
+        content: "\23F4";
+        font-family: FontAwesome;
+        font-weight: 400;
+        margin: 0 3px 0 0;
+      }
+    }
+    &.next {
+      &::after {
+        content: "\23F5";
+        font-family: FontAwesome;
+        font-weight: 400;
+        margin: 0 0 0 3px;
+      }
+    }
+    &.current {
+      background-color: $light;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white;
+        cursor: default;
+      }
+    }
+    &.dots {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $dark;
+        color: $white;
+        cursor: default;
+      }
+    }
+  }
+}

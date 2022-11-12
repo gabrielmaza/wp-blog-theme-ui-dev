@@ -1,0 +1,35 @@
+$px-14: 0.875rem;
+
+$semibold: 600;
+
+$dark: #000063;
+$primary: #c6ff00;
+
+/* SIDEBAR TAG CLOUD */
+
+.sidebar {
+  .sidebar_grid {
+    .widget_tag_cloud {
+      .wp-block-tag-cloud {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+        .tag-cloud-link {
+          font-size: $px-14 !important;
+          font-weight: $semibold;
+          color: $dark;
+          padding: 8px 16px;
+          background: $light-gray;
+          border-radius: 10px;
+          text-transform: uppercase;
+          transition: ease 0.17s;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

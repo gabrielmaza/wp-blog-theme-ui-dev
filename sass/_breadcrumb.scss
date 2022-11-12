@@ -1,0 +1,39 @@
+$dark-gray: #666;
+$primary: #c6ff00;
+$white: #fff;
+
+$px-12: 0.75rem;
+$px-14: 0.875rem;
+
+/* BREADCRUMB */
+
+.breadcrumb {
+  font-size: $px-12;
+  word-wrap: break-word;
+  color: $dark-gray;
+  background-color: $white;
+  .breadcrumb_link,
+  .breadcrumb_current {
+    font-size: $px-14;
+    font-weight: 400;
+    color: $dark-gray;
+    transition: color 0.17s;
+  }
+  .breadcrumb_link {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $primary;
+    }
+  }
+  .breadcrumb_delimiter {
+    font-size: $px-12;
+    color: $dark-gray;
+    &::after {
+      content: "\f105";
+      font-family: FontAwesome;
+      font-style: normal;
+      margin: 0 3px;
+    }
+  }
+}

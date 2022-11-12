@@ -1,0 +1,53 @@
+$white: #fff;
+$dark: #000063;
+$gray: #aaa;
+$dark-gray: #666;
+$light-gray: #f2f2f2;
+$primary: #c6ff00;
+$red: #ff0400;
+
+$semibold: 600;
+$bold: 700;
+
+$px-14: 0.875rem;
+
+/* SEARCH PAGE */
+
+.query-message {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  word-wrap: break-word;
+  width: 100%;
+  background-color: $light-gray;
+  padding: 8px 10px;
+  .query-message_info {
+    overflow: hidden;
+    font-size: $px-14;
+    color: $dark;
+  }
+  .post-categories {
+    li {
+      a {
+        font-weight: $bold;
+        text-transform: uppercase;
+        &::before {
+          content: "\201c";
+        }
+        &::after {
+          content: "\201d";
+        }
+      }
+    }
+  }
+  .query-message_tag {
+    font-weight: $bold;
+    text-transform: uppercase;
+    &::before {
+      content: "\201c";
+    }
+    &::after {
+      content: "\201d";
+    }
+  }
+}

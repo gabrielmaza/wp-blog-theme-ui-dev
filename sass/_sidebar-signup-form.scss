@@ -1,0 +1,76 @@
+$white: #fff;
+$dark: #000063;
+$semidark: #311b92;
+$light: #6746c3;
+$primary: #c6ff00;
+$p: #656565;
+$border: #cdcdcd;
+
+$semibold: 600;
+$bold: 700;
+
+$px-14: 0.875rem;
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    .mc-field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      position: relative;
+      width: 100%;
+      padding-bottom: 16px;
+      min-height: 50px;
+      label {
+        font-size: $px-14;
+        font-weight: $semibold;
+        color: $p;
+      }
+      input {
+        width: 100%;
+        height: 35px;
+        padding: 0 8px;
+        box-shadow: none;
+        border: 1px solid $border;
+        outline: none;
+        &::placeholder {
+          color: $p;
+        }
+      }
+    }
+    .btn {
+      clear: both;
+      background-color: $dark;
+      border: 0 none;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: $px-14;
+      font-weight: $bold;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 5px 10px 0;
+      padding: 0 22px;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: top;
+      white-space: nowrap;
+      width: auto;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $primary;
+        color: $dark;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+$font-color: #2c3e50;
+$dark: #000063;
+$semidark: #311b92;
+$light: #6746c3;
+$primary: #c6ff00;
+
+$px-16: 1rem;
+
+$bold: 700;
+
+/* SIDEBAR RECENT ENTRIES*/
+
+.sidebar {
+  .sidebar_grid {
+    .widget_recent_entries {
+      .wp-block-latest-posts__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        li {
+          .wp-block-latest-posts__post-title {
+            font-size: $px-16;
+            color: $font-color;
+            font-weight: $bold;
+            &:hover {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }
+}

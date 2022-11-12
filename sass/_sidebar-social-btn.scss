@@ -1,0 +1,85 @@
+$facebook: #3b5999;
+$twitter: #00acee;
+$instagram-mono: #dd277b;
+$white: #fff;
+
+$px-12: 0.75rem;
+
+/* SIDEBAR SOCIAL BUTTONS */
+
+.sidebar {
+  .sidebar_grid {
+    .wp-block-social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      .wp-social-link,
+      .wp-block-social-link {
+        max-width: 120px;
+        width: 100%;
+        &:hover {
+          transform: none;
+        }
+        .wp-block-social-link-anchor {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          max-width: 450px;
+          height: 34px;
+          font-size: $px-12;
+          font-weight: $semibold;
+          color: $white;
+          line-height: 34px;
+          transition: opacity 0.17s;
+          border-radius: 17px;
+          transition: opacity 0.17s;
+          &:hover {
+            opacity: 0.9;
+          }
+          svg {
+            width: 16px;
+            height: 16px;
+            margin: 10px;
+            background: transparent;
+            path {
+              fill: $white;
+            }
+          }
+          .wp-block-social-link-label,
+          .screen-reader-text {
+            position: relative;
+            overflow: visible;
+            clip: rect(1px, 1px, 1px, 1px);
+            -webkit-clip-path: none;
+            clip-path: none;
+            height: auto;
+            color: $white;
+            font-size: $px-12;
+            font-weight: $semibold;
+            color: $white;
+            line-height: 34px;
+          }
+        }
+
+        &.wp-social-link-twitter {
+          .wp-block-social-link-anchor {
+            background-color: $twitter;
+            color: $white;
+          }
+        }
+        &.wp-social-link-facebook {
+          .wp-block-social-link-anchor {
+            background-color: $facebook;
+            color: $white;
+          }
+        }
+        &.wp-social-link-instagram {
+          .wp-block-social-link-anchor {
+            background-color: $instagram-mono;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

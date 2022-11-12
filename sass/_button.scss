@@ -1,0 +1,40 @@
+$white: #fff;
+$dark: #000063;
+$semidark: #311b92;
+$light: #6746c3;
+$primary: #c6ff00;
+
+$bold: 700;
+
+$px-14: 0.875rem;
+
+/* BUTTON */
+
+.blog-btn,
+input[type="submit"] {
+  display: block;
+  width: fit-content;
+  min-width: 30px;
+  height: 35px;
+  background-color: $dark;
+  color: $white;
+  font-size: $px-14;
+  font-weight: $bold;
+  line-height: 35px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: none;
+  margin: 0 5px 0 0;
+  padding: 0 16px;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary;
+    color: $dark;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,98 @@
+$px-12: 0.75rem;
+$px-14: 0.875rem;
+
+$p: #656565;
+$border: #cdcdcd;
+$primary: #c6ff00;
+$primary-hov: #d1c4e9;
+$dark: #000063;
+$semidark: #311b92;
+$light: #6746c3;
+
+$semibold: 600;
+
+/* FORM */
+
+.form,
+.wpcf7-form,
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+  &.row {
+    flex-direction: row;
+  }
+  label {
+    font-size: $px-14;
+    font-weight: $semibold;
+    color: $p;
+  }
+  input {
+    width: 100%;
+    height: 35px;
+    padding: 0 8px;
+    box-shadow: none;
+    border: 1px solid $border;
+    border-radius: 8px;
+    outline: none;
+    &::placeholder {
+      color: $p;
+    }
+  }
+  textarea {
+    width: 100%;
+    padding: 8px 16px;
+    box-shadow: none;
+    border: 1px solid $border;
+    border-radius: 8px;
+    outline: none;
+    color: $p;
+    &::placeholder {
+      color: $p;
+    }
+  }
+  span {
+    font-size: $px-14;
+    color: $p;
+  }
+  .wpcf7-acceptance {
+    label {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: flex-start;
+      input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        outline: none;
+      }
+      span {
+        font-size: $px-14;
+        color: $p;
+      }
+      a {
+        font-size: $px-14;
+        color: $semidark;
+        font-weight: $semibold;
+        transition: color 0.17s ease;
+      }
+      a:hover,
+      a:focus,
+      a:active {
+        color: $light;
+        cursor: pointer;
+      }
+    }
+  }
+  input[type="submit"] {
+    width: auto;
+    padding: 0 24px;
+    float: right;
+  }
+  .wpcf7-not-valid-tip {
+    color: red;
+  }
+}

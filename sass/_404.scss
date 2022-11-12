@@ -1,0 +1,41 @@
+$white: #fff;
+$dark: #000063;
+$gray: #aaa;
+$dark-gray: #666;
+$light-gray: #f2f2f2;
+$primary: #c6ff00;
+$red: #ff0400;
+
+$semibold: 600;
+$bold: 700;
+
+$px-16: 1rem;
+$px-30: 1.875rem;
+$px-48: 3rem;
+$px-72: 4.5rem;
+
+/* 404 PAGE */
+
+.page-404_title {
+  text-align: center;
+  font-size: $px-48;
+  font-weight: $bold;
+  letter-spacing: 4px;
+  line-height: normal;
+  @media (min-width: $md-view) {
+    font-size: $px-72;
+  }
+}
+
+.page-404_subtitle {
+  text-align: center;
+  font-size: $px-30;
+  font-weight: $bold;
+  line-height: normal;
+}
+
+.page-404_paragraph {
+  text-align: center;
+  font-size: $px-16;
+  font-weight: $semibold;
+}
